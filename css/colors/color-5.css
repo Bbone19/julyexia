@@ -1,0 +1,618 @@
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+body {
+  color: rgba(39, 39, 39, 0.75);
+}
+a:hover {
+  color: #5635cc;
+}
+/* Heading Style */
+p {
+  color: rgba(39, 39, 39, 0.75);
+}
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-header .section-heading {
+  color: #272727;
+}
+.overlay-color {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+  color: #272727;
+}
+.btn.btn-fill {
+  color: #ffffff;
+  background-color: #5635cc;
+  border: 2px solid #5635cc;
+}
+.btn.btn-border {
+  border: 2px solid #272727;
+  background-color: transparent;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn.btn-js span {
+  color: #ffffff;
+}
+.btn.btn-js.btn-fill::before {
+  color: #ffffff;
+}
+.btn.btn-js::before {
+  color: #272727;
+}
+.btn.btn-js:hover {
+  background-color: #331f7c;
+  border-color: #331f7c;
+}
+.btn-text-link {
+  color: rgba(39, 39, 39, 0.85);
+}
+.btn-text-link a {
+  color: #5635cc;
+}
+/**
+ * ================================
+ * Nav Defult Style
+ * ================================
+ */
+.nav li a:hover,
+.nav li a:focus {
+  background-color: transparent;
+}
+/** 
+ * ======================
+ * Social Icon Style
+ * ======================
+ */
+.social-icon li a {
+  color: #ffffff !important;
+}
+.social-icon li a::before {
+  background-color: #ffffff;
+}
+.social-icon li a:hover {
+  color: #5635cc !important;
+}
+/**
+ * ======================================
+ * Project Full View Helping Custom Style
+ *  - PreLoader Style
+ *  - Back Button Style
+ * ======================================
+ */
+.project-loader-backButton .project-filter-loader .object {
+  background-color: #5635cc;
+}
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.email-loading {
+  color: #ffffff;
+}
+.subscription-failed,
+.email-failed {
+  color: #FF5252 !important;
+}
+.subscription-success,
+.email-success {
+  color: #52B8FF;
+}
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form .form-control {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 0 0 #fff;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.9);
+}
+.single-form .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.single-form .form-control:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.single-form .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.single-form .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.single-form .form-control:focus {
+  border-bottom-color: #5635cc;
+}
+.single-form .select-outer::after {
+  border-color: #ffffff transparent transparent;
+}
+/**
+ * =====================
+ * Section Left Side 
+ * =====================
+ */
+.section-area::before {
+  background-color: #5635cc;
+}
+/****************************************************************
+    START MAIN CSS STYLE
+*****************************************************************/
+/**
+ * =====================
+ * Top Navigation Bar
+ * =====================
+ */
+.header .primary-nav {
+  background-color: rgba(39, 39, 39, 0.98);
+}
+.header .primary-nav ul li a::before {
+  color: rgba(255, 255, 255, 0.75);
+}
+.header .primary-nav ul li a span {
+  color: #272727;
+}
+.header .primary-nav ul li a:hover {
+  background-color: #ffffff;
+}
+.header .primary-nav ul li a.active {
+  background-color: #ffffff;
+}
+.header .primary-nav .label {
+  color: rgba(255, 255, 255, 0.18);
+}
+/* Menu trigger  */
+.nav-trigger {
+  background-color: #ffffff;
+}
+.nav-trigger .icon,
+.nav-trigger .icon::after,
+.nav-trigger .icon::before {
+  background-color: #272727;
+}
+/* Navbar style for mobile and blog */
+.tablet .header .navbar-header .navbar-brand,
+.mobile .header .navbar-header .navbar-brand,
+.blog-page .header .navbar-header .navbar-brand {
+  background-color: #5635cc;
+}
+.tablet .header .navbar-home .navbar-header.background-color,
+.mobile .header .navbar-home .navbar-header.background-color,
+.blog-page .header .navbar-home .navbar-header.background-color {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+/**
+ * =========================
+ * Aside Navigation
+ * =========================
+ */
+.aside .aside-inner,
+.aside .aside-inner::before,
+.aside .aside-inner::after {
+  background-color: #5635cc;
+}
+/**
+ * ==============================
+ * Aside Navigation Address Style
+ * ==============================
+ */
+.parsonal-address .contact-address .nav li .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+.parsonal-address .contact-address .nav li .sub-title {
+  color: rgba(255, 255, 255, 0.8);
+}
+.parsonal-address .contact-address .nav li .sub-title:hover {
+  color: #ffffff;
+}
+/**
+ * =====================
+ * About Me Section Style
+ * =====================
+ */
+.about-me .part-1 img {
+  box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+}
+.about-me .part-2 .title {
+  color: #272727;
+}
+.about-me .part-2 .title::before {
+  background-color: #5635cc;
+}
+.about-me .part-2 .title span.light {
+  color: #5635cc;
+}
+.about-me .part-2 .sub-title {
+  color: #272727;
+}
+.about-me .part-2 .detail p {
+  color: rgba(39, 39, 39, 0.9);
+}
+/**
+ * =========================
+ * Skills Section Style
+ * =========================
+ */
+.skills .bar-data {
+  color: #272727;
+}
+.skills .progress {
+  background-color: rgba(86, 53, 204, 0.2);
+  box-shadow: 0 0 0 0 #ffffff;
+  -moz-box-shadow: 0 0 0 0 #ffffff;
+  -webkit-box-shadow: 0 0 0 0 #ffffff;
+  -o-box-shadow: 0 0 0 0 #ffffff;
+}
+.skills .progress .progress-bar {
+  background-color: #5635cc;
+}
+/**
+ * =========================
+ * Experience Section Style 
+ * =========================
+ */
+.experience .part .title {
+  color: #272727;
+}
+.experience .part .place,
+.experience .part .session {
+  color: rgba(39, 39, 39, 0.85);
+}
+.each-hover .each-features-inner:hover,
+.each-hover .each-features-inner.active {
+  box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+}
+/**
+ * =========================
+ * Project Section Style 
+ * =========================
+ */
+.project .grid .grid-item figure figcaption {
+  background: rgba(0, 0, 0, 0.5);
+}
+.project .grid .grid-item figure figcaption .detail {
+  color: #ffffff;
+}
+.project .grid .grid-item figure figcaption h3 {
+  color: #ffffff;
+}
+.project .grid .grid-item:hover {
+  box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.15);
+}
+/* Project Full View */
+.project-gallery-view .project-information {
+  background-color: rgba(39, 39, 39, 0.05);
+}
+.project-gallery-view .project-information ul li {
+  border-color: rgba(39, 39, 39, 0.12);
+}
+.project-gallery-view .project-information ul li h4 {
+  color: #272727;
+}
+.project-gallery-view .project-information ul li a {
+  color: rgba(39, 39, 39, 0.55);
+}
+.project-gallery-view .project-information ul li a:hover {
+  color: #5635cc;
+}
+.project-gallery-view .project-information ul li:last-child {
+  border-color: rgba(39, 39, 39, 0.12);
+}
+.project-gallery-view .project-information:hover {
+  box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+}
+.project-gallery-view .title {
+  color: rgba(39, 39, 39, 0.9);
+}
+.background-image .project-gallery-view .project-information {
+  background-color: rgba(39, 39, 39, 0.1);
+}
+/**
+ * =====================
+ * Contact From
+ * =====================
+ */
+.contact-us .form-body {
+  background-color: #272727;
+}
+.contact-us .form-body .title {
+  color: #ffffff;
+}
+/**
+ * =====================
+ * Contact Address
+ * =====================
+ */
+.contact-address .nav li .title {
+  color: rgba(39, 39, 39, 0.9);
+}
+.contact-address .nav li .sub-title {
+  color: rgba(39, 39, 39, 0.85);
+}
+.contact-address .nav li a:hover {
+  color: #5635cc;
+}
+/**
+ * ===================================
+ * Blog Post Body Style
+ * ===================================
+ */
+.sa-blog-contant-1 .thumbnail {
+  border-bottom-color: #ffffff;
+}
+.sa-blog-contant-1 .video {
+  background-color: #272727;
+}
+.sa-blog-contant-1 .hover.each-blog:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+}
+.sa-blog-contant-1 .single-post .teg li span {
+  background-color: #5635cc;
+  color: #ffffff;
+}
+.sa-blog-contant-1 .single-post .teg li .dark {
+  background-color: rgba(39, 39, 39, 0.75);
+}
+.sa-blog-contant-1 .single-post .title {
+  color: rgba(39, 39, 39, 0.8);
+}
+.sa-blog-contant-1 .single-post .title-link:hover .title {
+  color: rgba(86, 53, 204, 0.9) !important;
+}
+.sa-blog-contant-1 .single-post .post-option span {
+  color: rgba(39, 39, 39, 0.6);
+}
+.sa-blog-contant-1 .single-post .post-option span a {
+  color: rgba(39, 39, 39, 0.6);
+}
+.sa-blog-contant-1 .single-post .post-option span a:hover {
+  color: #5635cc;
+}
+.sa-blog-contant-1 .part-1 .each-blog .thumbnail {
+  background-color: #ffffff;
+}
+.sa-blog-contant-1 .part-2 .inner-aside {
+  background-color: rgba(39, 39, 39, 0.05);
+}
+.sa-blog-contant-1 .part-2 .categories .post-title {
+  color: #272727;
+}
+.sa-blog-contant-1 .part-2 .categories a {
+  color: rgba(39, 39, 39, 0.75);
+}
+.sa-blog-contant-1 .part-2 .categories a:hover {
+  color: #5635cc;
+}
+.sa-blog-contant-1 .pagination-nav .pagination li a {
+  color: #5635cc;
+  background-color: rgba(86, 53, 204, 0.25);
+}
+.sa-blog-contant-1 .pagination-nav .pagination li a::before {
+  background-color: #5635cc;
+}
+.sa-blog-contant-1 .pagination-nav .pagination li a:hover {
+  color: #ffffff;
+}
+.sa-blog-contant-1 .pagination-nav .pagination li.active a {
+  color: #ffffff;
+}
+.background-image .sa-blog-contant-1 .part-2 .inner-aside {
+  background-color: rgba(39, 39, 39, 0.1);
+}
+.background-image .sa-blog-contant-1 .part-1 .each-blog.hover {
+  background-color: rgba(39, 39, 39, 0.1);
+}
+.background-image .sa-blog-contant-1 .part-1 .thumbnail {
+  background-color: transparent;
+}
+/**
+* =============================
+*  Comment Section Syle
+* =============================
+*/
+.sa-post-comment .media .media-body {
+  color: rgba(39, 39, 39, 0.6);
+}
+.sa-post-comment .media .media-heading {
+  color: rgba(39, 39, 39, 0.65);
+}
+.sa-post-comment .media .post-date {
+  color: rgba(39, 39, 39, 0.5);
+}
+.sa-post-comment .media .reply {
+  color: rgba(39, 39, 39, 0.6);
+}
+.sa-post-comment .media .reply:hover {
+  color: #5635cc;
+}
+/**
+* =============================
+*  Comment option Style
+* =============================
+*/
+.sa-comment-option a {
+  color: rgba(0, 0, 0, 0.8);
+}
+/**
+* =============================
+*  Comment Form Style
+* =============================
+*/
+.sa-comment-form {
+  background-color: rgba(39, 39, 39, 0.05);
+}
+.sa-comment-form .single-form .form-control,
+.sa-comment-form .single-form textarea {
+  border-bottom-color: rgba(39, 39, 39, 0.3);
+  color: #272727;
+}
+.sa-comment-form .single-form .form-control::-webkit-input-placeholder,
+.sa-comment-form .single-form textarea::-webkit-input-placeholder {
+  color: rgba(39, 39, 39, 0.65) !important;
+}
+.sa-comment-form .single-form .form-control:-moz-placeholder,
+.sa-comment-form .single-form textarea:-moz-placeholder {
+  color: rgba(39, 39, 39, 0.65) !important;
+}
+.sa-comment-form .single-form .form-control::-moz-placeholder,
+.sa-comment-form .single-form textarea::-moz-placeholder {
+  color: rgba(39, 39, 39, 0.65) !important;
+}
+.sa-comment-form .single-form .form-control:-ms-input-placeholder,
+.sa-comment-form .single-form textarea:-ms-input-placeholder {
+  color: rgba(39, 39, 39, 0.65) !important;
+}
+.sa-comment-form .single-form .form-control:focus,
+.sa-comment-form .single-form textarea:focus {
+  border-bottom-color: rgba(86, 53, 204, 0.9);
+}
+.background-image .sa-comment-form {
+  background-color: rgba(39, 39, 39, 0.1);
+}
+/**
+* =============================
+*  Search Form Style
+* =============================
+*/
+.sa-search .single-form .form-control {
+  color: #272727;
+}
+.sa-search .single-form .form-control::-webkit-input-placeholder {
+  color: rgba(39, 39, 39, 0.8) !important;
+}
+.sa-search .single-form .form-control:-moz-placeholder {
+  color: rgba(39, 39, 39, 0.8) !important;
+}
+.sa-search .single-form .form-control::-moz-placeholder {
+  color: rgba(39, 39, 39, 0.8) !important;
+}
+.sa-search .single-form .form-control:-ms-input-placeholder {
+  color: rgba(39, 39, 39, 0.8) !important;
+}
+.sa-search .single-form .form-control,
+.sa-search .single-form .btn {
+  background-color: transparent;
+  border: 0px solid #fff;
+  border-bottom: 1px solid rgba(39, 39, 39, 0.75);
+}
+.sa-search .single-form .btn {
+  color: #272727;
+}
+.sa-search .single-form .btn:hover {
+  color: #5635cc;
+}
+/**
+* =============================
+*  Recent Post Section Style
+* =============================
+*/
+.sa-recent-post a .image {
+  background-color: #5635cc;
+}
+.sa-recent-post a img {
+  background-color: #5635cc;
+}
+.sa-recent-post a p {
+  color: rgba(39, 39, 39, 0.9);
+}
+.sa-recent-post a span {
+  color: rgba(39, 39, 39, 0.75);
+}
+.sa-recent-post a:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+}
+.sa-recent-post a:hover p {
+  color: rgba(86, 53, 204, 0.9);
+}
+/**
+* =============================
+*  Post Counting 
+* =============================
+*/
+.post-counter a:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+}
+/**
+* =============================
+*  Post Teg Style
+* =============================
+*/
+.tags .title:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.1);
+}
+/**
+* =============================
+*  Post api image gelary
+* =============================
+*/
+.post-api-gelary li {
+  background-color: #5635cc;
+}
+/**
+ * ==============================
+ * Full Screen Section Navigation
+ * ==============================
+ */
+#fp-nav li .fp-tooltip {
+  background-color: #5635cc;
+}
+/**
+ * ================================
+ * Flex Slider NEXT and PREV Button
+ * ================================
+ */
+.flex-direction-nav .next,
+.flex-direction-nav .prev {
+  border-color: #fff !important;
+  background-color: rgba(39, 39, 39, 0.45);
+  color: rgba(255, 255, 255, 0.95);
+}
+.flex-direction-nav .next::after,
+.flex-direction-nav .prev::after,
+.flex-direction-nav .next::before,
+.flex-direction-nav .prev::before {
+  background: #ffffff;
+}
+.flex-direction-nav .next:hover,
+.flex-direction-nav .prev:hover {
+  background-color: rgba(39, 39, 39, 0.65);
+  color: #ffffff;
+}
