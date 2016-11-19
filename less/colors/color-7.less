@@ -1,0 +1,942 @@
+// This file import helping some function
+@import "../../bootstrap/less/variables.less";
+
+// This file import helping some function
+@import "../less-function.less";
+
+// VARIABLES 
+@import "../variable.less";
+
+
+// COLOR VARIABLES
+@main-color-1:      #D6613B;            // Template Main Color
+
+
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+body{
+    color:                  fade(@dark-color, 75%);
+}
+
+a{
+    &:hover {
+        color: @main-color-1;
+    }
+}
+
+
+/* Heading Style */
+p{
+    color:              fade(@dark-color, 75%);
+}
+
+
+
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-header {
+    .section-heading {
+        color:          fade(@dark-color, 100%);
+    }
+}
+
+
+.overlay-color {
+    background-color: fade(#000000, 80%);
+    //height: 100%;
+}
+
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+    color:                      fade(@dark-color, 100%);
+
+    &.btn-fill {
+        color:                  fade(@light-color, 100%);
+        background-color:       @main-color-1;
+        border:                 2px solid fade(@main-color-1, 100%);
+    }
+
+    &.btn-border {
+        border:                 2px solid fade(@dark-color, 100%);
+        background-color:       transparent;
+    }
+
+
+    &:hover {
+        color:                  #fff;
+    }
+
+    &.btn-js {
+        span {
+            color:                                  @light-color;
+        }
+
+        &.btn-fill {
+            &::before {
+                color:                              @light-color;
+            }
+        }
+
+        &::before {
+            color:                                  @dark-color;
+        }
+
+        &:hover {
+            background-color:                       darken(@main-color-1, 20%);
+            border-color:                           darken(@main-color-1, 20%);
+        }
+    }
+}
+
+.btn-text-link {
+    color:                                          fade(@dark-color, 85%);
+
+    a {
+        color:                                      @main-color-1;
+    }
+}
+
+
+
+/**
+ * ================================
+ * Nav Defult Style
+ * ================================
+ */
+.nav {
+    li {
+        a {
+            &:hover,
+            &:focus {
+                background-color:                   transparent;
+            }
+        }
+    }
+}
+
+
+
+/** 
+ * ======================
+ * Social Icon Style
+ * ======================
+ */
+.social-icon {
+    li {
+        a {
+            color:                                  fade(@light-color, 100%) !important;
+
+            &::before {
+                background-color:                   @light-color;
+            }
+
+            &:hover {
+                color:                              fade(@main-color-1, 100%) !important;
+            }
+        }
+    }
+}
+
+
+/**
+ * ======================================
+ * Project Full View Helping Custom Style
+ *  - PreLoader Style
+ *  - Back Button Style
+ * ======================================
+ */
+.project-loader-backButton {
+    .project-filter-loader {
+        .object {
+            background-color:                       @main-color-1;
+        }
+    }
+}
+
+
+
+
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.email-loading {
+    color: @light-color;
+}
+
+.subscription-failed, .email-failed{
+    color:                                          #FF5252 !important;
+}
+
+.subscription-success, 
+.email-success {
+    color:                                          #52B8FF;
+}
+
+
+
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form {
+    .form-control {
+        border-bottom:                              1px solid fade(@light-color, 65%);
+        box-shadow:                                 0 0 0 0 #fff;
+        background-color:                           transparent;
+        color:                                      fade(@light-color, 90%);
+        .placeholder-color(fade(@light-color, 70%));
+
+        &:focus {
+            border-bottom-color:                    @main-color-1;
+        }
+    }
+
+    .select-outer {
+        &::after {
+            border-color: fade(@light-color, 100%) transparent transparent;
+        }
+    }
+}
+
+
+
+/**
+ * =====================
+ * Section Left Side 
+ * =====================
+ */
+.section-area {
+    &::before {
+        background-color:                           @main-color-1;
+    }
+}
+
+
+
+/****************************************************************
+    START MAIN CSS STYLE
+*****************************************************************/
+
+
+/**
+ * =====================
+ * Top Navigation Bar
+ * =====================
+ */
+.header {
+    .primary-nav {
+        background-color: fade(@background-2, 98%);
+
+        ul {
+            li {
+                a {
+
+                    &::before {
+                        color: fade(@light-color, 75%);
+                    }
+
+                    span {
+                        color: fade(@dark-color, 100%);
+                    }
+
+                    &:hover {
+                        background-color: @light-color;
+                    }
+
+                    &.active {
+                        background-color: @light-color;
+                    }
+                }
+            }
+        }
+
+        .label {
+            color: fade(@light-color, 18%);
+        }
+    }
+}
+
+
+/* Menu trigger  */
+.nav-trigger {
+    background-color: @background-1;
+    
+    .icon {
+        &,
+        &::after,
+        &::before {
+            background-color: @background-2;
+        }
+    }
+}
+
+
+/* Navbar style for mobile and blog */
+.tablet,
+.mobile,
+.blog-page {
+    .header {
+        .navbar-header {
+
+            .navbar-brand {
+                background-color: @main-color-1;
+            }
+        }
+
+        .navbar-home {
+            .navbar-header {
+                &.background-color {
+                    background-color: fade(@light-color, 85%);
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * =========================
+ * Aside Navigation
+ * =========================
+ */
+.aside {
+    .aside-inner {
+        &,
+        &::before,
+        &::after {
+            background-color: @main-color-1;
+        }
+    }
+}
+
+
+
+/**
+ * ==============================
+ * Aside Navigation Address Style
+ * ==============================
+ */
+.parsonal-address {
+    .contact-address {
+        .nav {
+            li {
+                .title {
+                    color: fade(@light-color, 90%);
+                }
+
+                .sub-title {
+                    color: fade(@light-color, 80%);
+
+                    &:hover {
+                        color: fade(@light-color, 100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * =====================
+ * About Me Section Style
+ * =====================
+ */
+.about-me {
+    .part-1 {
+        img {
+            .box-shadow(0, 10px, 65px, 0, fade(@shadow-color, 15%));
+        }
+    }
+
+    .part-2 {
+        .title {
+            color: @dark-color;
+
+            &::before {
+                background-color: @main-color-1;
+            }
+
+            span {
+                &.light {
+                    color: @main-color-1;
+                }
+            }
+        }
+
+        .sub-title {
+            color: @dark-color;
+        }
+
+        .detail{
+            p {
+                color: fade(@dark-color, 90%);
+            }
+        }
+    }
+}
+
+
+
+
+
+/**
+ * =========================
+ * Skills Section Style
+ * =========================
+ */
+.skills {
+    .bar-data {
+        color: @dark-color;
+    }
+
+    .progress {
+        background-color: fade(@main-color-1, 20%);
+        .box-shadow( 0, 0, 0, 0, #fff );
+
+        .progress-bar {
+            background-color: fade(@main-color-1, 100%);
+        }
+    }
+}
+
+    
+
+
+
+/**
+ * =========================
+ * Experience Section Style 
+ * =========================
+ */
+.experience {
+
+    .part {
+        .title {
+            color: @dark-color;
+        }
+
+        .place,
+        .session {
+            color: fade(@dark-color, 85%);
+        }
+    }
+}
+
+.each-hover {
+    .each-features-inner {
+        &:hover,
+        &.active {
+            .box-shadow(0, 10px, 65px, 0, fade(@shadow-color, 15%));
+        }
+    }
+}
+
+
+
+
+/**
+ * =========================
+ * Project Section Style 
+ * =========================
+ */
+.project {
+    .grid {
+        .grid-item {
+            figure {
+                figcaption {
+                    background: fade(@shadow-color, 50%);
+
+                    .detail {
+                        color: fade(@light-color, 100%);
+                    }
+
+                    h3 {
+                        color: fade(@light-color, 100%);
+                    }
+                }
+            }
+
+            &:hover {
+                .box-shadow(0, 7px, 65px, 0, fade(@shadow-color, 15%) );
+            }
+        }
+    }
+}
+
+/* Project Full View */
+.project-gallery-view {
+    .project-information {
+        background-color: fade(@background-2, 5%);
+
+        ul {
+            li {
+                border-color: fade(@dark-color, 12%);
+
+                h4 {
+                    color: fade(@dark-color, 100%);
+                }
+                a {
+                    color: fade(@dark-color, 55%);
+
+                    &:hover {
+                        color: @main-color-1;
+                    }
+                }
+
+                &:last-child {
+                    border-color: fade(@dark-color, 12%);
+                }
+            }
+        }
+
+        &:hover {
+            .box-shadow(0, 10px, 65px, 0, fade(@shadow-color, 15%));
+        }
+    }
+
+    .title {
+        color: fade(@dark-color, 90%);
+    }  
+}
+
+.background-image {
+    .project-gallery-view {
+        .project-information {
+            background-color: fade(@background-2, 10%);
+        }
+    }
+}
+
+
+
+/**
+ * =====================
+ * Contact From
+ * =====================
+ */
+.contact-us {
+    .form-body {
+        background-color: @background-2;
+        .title {
+            color: @light-color;
+        }
+    }
+}
+
+
+
+/**
+ * =====================
+ * Contact Address
+ * =====================
+ */
+.contact-address {
+    .nav {
+        li {
+            .title {
+                color: fade(@dark-color, 90%);
+            }
+
+            .sub-title {
+                color: fade(@dark-color, 85%);
+            }
+
+            a {
+                &:hover {
+                    color: @main-color-1;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+/**
+ * ===================================
+ * Blog Post Body Style
+ * ===================================
+ */
+.sa-blog-contant-1 {
+    .thumbnail {
+        border-bottom-color: @light-color;
+    }
+
+    .video {
+        background-color: @dark-color;
+    }
+
+    .hover {
+        &.each-blog {
+            &:hover {
+               .box-shadow(0, 5px, 65px, 0, fade(@shadow-color, 10%) );
+            }
+        }
+    }
+
+    .single-post {
+        .teg {
+            li {
+                span {
+                    background-color: @main-color-1;
+                    color: @light-color;
+                }
+
+                .dark {
+                    background-color: fade(@dark-color, 75%);
+                }
+            }
+        }
+
+        .title {
+            color: fade(@dark-color, 80%);
+        }
+
+        .title-link {
+            &:hover {
+                .title {
+                    color: fade(@main-color-1, 90%) !important;
+                }
+            }
+        }
+
+        .post-option {
+            span {
+                color: fade(@dark-color, 60%);
+
+                a {
+                    color: fade(@dark-color, 60%);
+
+                    &:hover {
+                        color: @main-color-1;
+                    }
+                }
+            }
+        }
+    }
+
+    .part-1 {
+        .each-blog {
+            .thumbnail {
+                background-color: @background-1;
+            }
+        }
+    }
+
+    .part-2 {
+        .inner-aside {
+            background-color: fade(@background-2, 5%);
+        }
+
+        .categories {
+            .post-title {
+                color: fade(@dark-color, 100%);
+            }
+
+            a {
+                color: fade(@dark-color, 75%);
+
+                &:hover {
+                    color: @main-color-1;
+                }
+            }
+        }
+    }
+    
+    .pagination-nav{
+        .pagination {
+            li {
+                a {
+                    color: @main-color-1;
+                    background-color: fade(@main-color-1, 25%);
+
+                    &::before {
+                        background-color:                   @main-color-1;
+                    }
+
+                    &:hover {
+                        color: @light-color;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: @light-color ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-image {
+    .sa-blog-contant-1 {
+        .part-2 {
+            .inner-aside {
+                background-color: fade(@dark-color, 10%);
+            }
+        }
+
+        .part-1 {
+            .each-blog {
+                &.hover {
+                    background-color: fade(@dark-color, 10%);
+                }
+            }
+
+            .thumbnail {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+
+
+
+/**
+* =============================
+*  Comment Section Syle
+* =============================
+*/
+.sa-post-comment {
+    .media {
+        .media-body {
+            color: fade(@dark-color, 60%);
+        }
+
+        .media-heading {
+            color: fade(@dark-color, 65%);
+        }
+
+        .post-date {
+            color: fade(@dark-color, 50%);
+        }
+
+        .reply {
+            color: fade(@dark-color, 60%);
+
+            &:hover {
+                color: @main-color-1;
+            }
+        }
+
+    }
+}
+
+
+
+/**
+* =============================
+*  Comment option Style
+* =============================
+*/
+.sa-comment-option {
+    a {
+        color: rgba(0,0,0,0.80);
+
+    }
+}
+
+
+
+/**
+* =============================
+*  Comment Form Style
+* =============================
+*/
+.sa-comment-form {
+    background-color: fade(@background-2, 5%);
+
+    .single-form {
+        .form-control,
+        textarea {
+            .placeholder-color( fade(@dark-color, 65%) );
+            border-bottom-color: fade(@dark-color, 30%);
+            color: @dark-color;
+
+            &:focus {
+                border-bottom-color: fade(@main-color-1, 90%);
+            }
+        }
+    }
+}
+
+.background-image  {
+    .sa-comment-form {
+        background-color: fade(@background-2, 10%);
+    }
+}
+
+
+
+
+/**
+* =============================
+*  Search Form Style
+* =============================
+*/
+.sa-search {
+    .single-form {
+        .form-control {
+            color: @dark-color;
+            .placeholder-color(fade(@dark-color, 80%));
+        }
+
+        .form-control,
+        .btn {
+            background-color: transparent;
+            border: 0px solid #fff;
+            border-bottom: 1px solid fade(@dark-color, 75%);
+        }
+
+        .btn {
+            color: @dark-color;
+
+            &:hover {
+                color: @main-color-1;
+            }
+        }
+    }
+}
+
+
+
+/**
+* =============================
+*  Recent Post Section Style
+* =============================
+*/
+.sa-recent-post {
+    a {
+        .image {
+            background-color: @main-color-1;
+        }
+
+        img {
+            background-color: @main-color-1;
+        }
+
+        p {
+            color: fade(@dark-color, 90%);
+        }
+
+        span {
+            color: fade(@dark-color, 75%) ;
+        }
+
+        &:hover {
+            .box-shadow(0, 5px, 65px, 0, fade(@shadow-color, 10%) );
+            
+            p {
+                color: fade(@main-color-1, 90%);
+            }
+        }
+    }
+}
+
+
+
+/**
+* =============================
+*  Post Counting 
+* =============================
+*/
+.post-counter{
+    a {
+        &:hover {
+            .box-shadow(0, 5px, 65px, 0, fade(@shadow-color, 10%) );
+        }
+    }
+}
+
+
+/**
+* =============================
+*  Post Teg Style
+* =============================
+*/
+.tags {
+    .title {
+        &:hover {
+            .box-shadow(0, 5px, 65px, 0, fade(@shadow-color, 10%) );
+        }
+    }
+}
+
+
+/**
+* =============================
+*  Post api image gelary
+* =============================
+*/
+.post-api-gelary {
+    li {
+        background-color: @main-color-1;
+    }
+}
+
+
+
+/**
+ * ==============================
+ * Full Screen Section Navigation
+ * ==============================
+ */
+#fp-nav {
+    li {
+        .fp-tooltip {
+            background-color: @main-color-1;
+        }
+    }
+}
+
+
+/**
+ * ================================
+ * Flex Slider NEXT and PREV Button
+ * ================================
+ */
+.flex-direction-nav {
+    .next, 
+    .prev {
+        border-color: #fff !important;
+        background-color: fade(@dark-color, 45%);
+        color: fade(@light-color, 95%);
+
+        &::after,
+        &::before {
+            background: fade(@light-color, 100%);
+        }
+
+        &:hover {
+            background-color: fade(@dark-color, 65%);
+            color: fade(@light-color, 100%);
+        }
+    }
+}
+
+

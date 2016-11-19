@@ -1,0 +1,90 @@
+@import "../bootstrap/less/variables.less";
+
+@lg: 1170px / 12;
+@md: 970px / 12;
+@sm: 750px / 12;
+@xs: 100% / 12;
+
+.col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* Small devices (tablets, 1 and 767px) */
+@media (max-width: @screen-xs-max) {
+	.col {
+		&.xs-1 { width: @xs * 1; }
+		&.xs-2 { width: @xs * 2; }
+		&.xs-3 { width: @xs * 3; }
+		&.xs-4 { width: @xs * 4; }
+		&.xs-5 { width: @xs * 5; }
+		&.xs-6 { width: @xs * 6; }
+		&.xs-7 { width: @xs * 7; }
+		&.xs-8 { width: @xs * 8; }
+		&.xs-9 { width: @xs * 9; }
+		&.xs-10 { width: @xs * 10; }
+		&.xs-11 { width: @xs * 11; }
+		&.xs-12 { width: @xs * 12; }
+	}
+}
+
+
+/* Small devices (tablets, 768px and 991px) */
+@media (min-width: @screen-sm-min) {
+	.col {
+		&.sm-1 { width: @sm * 1; }
+		&.sm-2 { width: @sm * 2; }
+		&.sm-3 { width: @sm * 3; }
+		&.sm-4 { width: @sm * 4; }
+		&.sm-5 { width: @sm * 5; }
+		&.sm-6 { width: @sm * 6; }
+		&.sm-7 { width: @sm * 7; }
+		&.sm-8 { width: @sm * 8; }
+		&.sm-9 { width: @sm * 9; }
+		&.sm-10 { width: @sm * 10; }
+		&.sm-11 { width: @sm * 11; }
+		&.sm-12 { width: @sm * 12; }
+	}
+}
+
+
+/* Medium devices (desktops, 992px and 1199) */
+@media (min-width: @screen-md-min) {
+	.col {
+		&.md-1 { width: @md * 1; }
+		&.md-2 { width: @md * 2; }
+		&.md-3 { width: @md * 3; }
+		&.md-4 { width: @md * 4; }
+		&.md-5 { width: @md * 5; }
+		&.md-6 { width: @md * 6; }
+		&.md-7 { width: @md * 7; }
+		&.md-8 { width: @md * 8; }
+		&.md-9 { width: @md * 9; }
+		&.md-10 { width: @md * 10; }
+		&.md-11 { width: @md * 11; }
+		&.md-12 { width: @md * 12; }
+	}
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+	.col {
+		&.lg-1 { width: @lg * 1; }
+		&.lg-2 { width: @lg * 2; }
+		&.lg-3 { width: @lg * 3; }
+		&.lg-4 { width: @lg * 4; }
+		&.lg-5 { width: @lg * 5; }
+		&.lg-6 { width: @lg * 6; }
+		&.lg-7 { width: @lg * 7; }
+		&.lg-8 { width: @lg * 8; }
+		&.lg-9 { width: @lg * 9; }
+		&.lg-10 { width: @lg * 10; }
+		&.lg-11 { width: @lg * 11; }
+		&.lg-12 { width: @lg * 12; }
+	}
+}

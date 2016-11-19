@@ -1,0 +1,170 @@
+// Less Function:
+//==================================
+
+.text-shadow(@a1, @a2, @a3, @color){
+    text-shadow:            @a1 @a2 @a3 @color;
+    -moz-text-shadow:       @a1 @a2 @a3 @color;
+    -webkit-text-shadow:    @a1 @a2 @a3 @color;
+    -o-text-shadow:         @a1 @a2 @a3 @color;
+}
+.text-shadow-important(@a1, @a2, @a3, @color){
+    text-shadow:            @a1 @a2 @a3 @color !important;
+    -moz-text-shadow:       @a1 @a2 @a3 @color !important;
+    -webkit-text-shadow:    @a1 @a2 @a3 @color !important;
+    -o-text-shadow:         @a1 @a2 @a3 @color !important;
+}
+.box-shadow(@a1, @a2, @a3, @a4, @color){
+    box-shadow:             @a1 @a2 @a3 @a4 @color;
+    -moz-box-shadow:        @a1 @a2 @a3 @a4 @color;
+    -webkit-box-shadow:     @a1 @a2 @a3 @a4 @color;
+    -o-box-shadow:          @a1 @a2 @a3 @a4 @color;
+}
+.box-shadow-important(@a1, @a2, @a3, @a4, @color ){
+    box-shadow:             @a1 @a2 @a3 @a4 @color !important;
+    -moz-box-shadow:        @a1 @a2 @a3 @a4 @color !important;
+    -webkit-box-shadow:     @a1 @a2 @a3 @a4 @color !important;
+    -o-box-shadow:          @a1 @a2 @a3 @a4 @color !important;
+}
+
+.border-radius( @lu: @border-radius, @ru: @border-radius, @rd: @border-radius, @ld: @border-radius ){
+    border-radius:          @lu @ru @rd @ld;
+    -webkit-border-radius:  @lu @ru @rd @ld;
+    -moz-border-radius:     @lu @ru @rd @ld;
+    -ms-border-radius:      @lu @ru @rd @ld;
+    -o-border-radius:       @lu @ru @rd @ld;
+}
+.border-radius-importent( @lu: @border-radius, @ru: @border-radius, @rd: @border-radius, @ld: @border-radius ){
+    border-radius:          @lu @ru @rd @ld !important;
+    -webkit-border-radius:  @lu @ru @rd @ld !important;
+    -moz-border-radius:     @lu @ru @rd @ld !important;
+    -ms-border-radius:      @lu @ru @rd @ld !important;
+    -o-border-radius:       @lu @ru @rd @ld !important;
+}
+
+
+.background-image( @images-name, @repeat: no-repeat, @bg-att: initial, @bg-size: cover, @bg-c: #fff, @positionX: 50%, @positionY: 50% ){
+    background:             url(@images-name);
+    -webkit-background-size: @bg-size;
+    -moz-background-size:   @bg-size;
+    -o-background-size:     @bg-size;
+    background-size:        @bg-size;
+    background-position:    @positionX @positionY;
+    background-attachment:  @bg-att;
+    background-repeat:      @repeat;
+    background-color:       @bg-c;
+}
+
+.transform-rotate( @value ){
+    transform:              rotate(@value);
+    -webkit-transform:      rotate(@value);
+    -moz-transform:         rotate(@value);
+    -o-transform:           rotate(@value);
+}
+
+.transform-mix( @translateX: 0, @translateY: 0, @translateZ: 0, @rotate: 0deg, @scale: 1 ) {
+    transform: translateX( @translateX ) translateY( @translateY ) translateZ( @translateZ ) rotate( @rotate ) scale( @scale );
+    -o-transform: translateX( @translateX ) translateY( @translateY ) translateZ( @translateZ ) rotate( @rotate ) scale( @scale );
+    -ms-transform: translateX( @translateX ) translateY( @translateY ) translateZ( @translateZ ) rotate( @rotate ) scale( @scale );
+    -moz-transform: translateX( @translateX ) translateY( @translateY ) translateZ( @translateZ ) rotate( @rotate ) scale( @scale );
+    -webkit-transform: translateX( @translateX ) translateY( @translateY ) translateZ( @translateZ ) rotate( @rotate ) scale( @scale );
+}
+
+.transition( @value, @direction: ease-out, @important: ~""){
+    -webkit-transition: all @value @direction @important;
+    -moz-transition:        all @value @direction @important;
+    -o-transition:          all @value @direction @important;
+    -ms-transition:         all @value @direction @important;
+    transition:             all @value @direction @important;
+}
+
+.transition-delay( @value ) {
+    -webkit-transition-delay: @value;
+    -moz-transition-delay: @value;
+    -o-transition-delay: @value;
+    transition-delay: @value;
+}
+
+.transform-origin( @x: 0, @y: 0 ) {
+    -webkit-transform-origin: @x @y;
+    -moz-transform-origin: @x @y;
+    -ms-transform-origin: @x @y;
+    -o-transform-origin: @x @y;
+    transform-origin: @x @y;
+}
+
+// .calc(@value1, @value2, @value3){
+//     // Firefox 
+//     width: -moz-calc(@value1 @value2 @value3);
+//     // WebKit 
+//     width: -webkit-calc(@value1 @value2 @value3);
+//     // Opera 
+//     width: -o-calc(@value1 @value2 @value3);
+//     // Standard 
+//     width: calc(@value1 @value2 @value3);
+//     // IE-OLD 
+//     width: expression(@value1 @value2 @value3);
+// }
+
+
+// INPUT FORM PLACEHOLDER COLOR   
+.placeholder-color( @value ) {
+    &::-webkit-input-placeholder {
+        color:              @value !important;
+    }
+    &:-moz-placeholder {
+        color:              @value !important;
+    }
+    &::-moz-placeholder {
+        color:              @value !important;
+    }
+    &:-ms-input-placeholder {
+        color:              @value !important;
+    }
+}
+
+.center(@value) {
+    display:                flex;
+   -webkit-flex-direction:  row; /* works with row or column */
+   flex-direction:          row;
+   -webkit-align-items:     center;
+   align-items:             center;
+   -webkit-justify-content: center;
+   justify-content:         center;
+}
+
+.overlay-color(@alpha: 0.55) {
+    background: rgba(red(@overlay-color), green(@overlay-color), blue(@overlay-color), @alpha);
+}
+
+//
+//----------------------------------------------------------------------------
+// MIXINS
+//----------------------------------------------------------------------------
+//
+.color-gradient(@main-color-2, @main-color, @rotate: 57deg, @alpha: 0.95) {
+    background: -webkit-linear-gradient(
+        @rotate, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), @alpha) 0%, 
+        rgba(red(@main-color), green(@main-color), blue(@main-color), @alpha) 100%
+    );
+    background: -moz-linear-gradient(
+        @rotate, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), @alpha) 0%, 
+        rgba(red(@main-color), green(@main-color), blue(@main-color), @alpha) 100%
+    );
+    background: -ms-linear-gradient(
+        @rotate, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), @alpha) 0%, 
+        rgba(red(@main-color), green(@main-color), blue(@main-color), @alpha) 100%
+    );
+    background: -o-linear-gradient(
+        @rotate, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), @alpha) 0%, 
+        rgba(red(@main-color), green(@main-color), blue(@main-color), @alpha) 100%
+    );
+    background: linear-gradient(
+        @rotate, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), @alpha) 0%, 
+        rgba(red(@main-color), green(@main-color), blue(@main-color), @alpha) 100%
+    );
+}
